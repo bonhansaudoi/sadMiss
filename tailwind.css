@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    button, input {@apply focus:outline-none;}
+} 
+
+@layer utilities { 
+    .main, .canvas, .modal {@apply absolute inset-0 lg:overflow-hidden;}            
+    .center {@apply flex flex-col justify-center items-center;} 
+    .center-row {@apply flex flex-wrap justify-center;}   
+
+    
+/* youtube */ 
+    .youtube {
+        @apply relative pt-youtube;
+    } 
+    .iframe-youtube {
+        @apply w-full h-full absolute inset-0;
+    }  
+    .btn {
+        @apply py-1 px-2 text-sm md:text-base text-gray-500 font-semibold border-2 border-gray-500 rounded-lg hover:text-white;
+    } 
+/* myMiss */                   
+    .youtube-list {@apply flex flex-col mt-16 h-80 space-y-2 py-2 overflow-auto;}               
+    .youtube-list li {@apply inline-flex items-center pl-2 space-x-2 cursor-pointer text-lg lg:text-xl font-semibold text-white;}                     
+    .youtube-list li img {@apply w-20 h-12 border-2 rounded-md shadow-md border-cyan-500;}   
+/* mySad */   
+} 
