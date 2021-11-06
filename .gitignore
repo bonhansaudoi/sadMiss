@@ -1,0 +1,10 @@
+node_modules 
+/src/assets/video
+
+.vscode  
+package.json
+package-lock.json
+postcss.config.js
+tailwind.config.js
+tailwind.css
+ 

@@ -1,0 +1,33 @@
+
+
+/* ---carousel---*/ 
+.Nfade {
+    -webkit-animation-name: Nfade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: Nfade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes Nfade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes Nfade {
+    from {opacity: .4}
+    to {opacity: 1} 
+}
+
+/* ----Nborder---------- */
+.Nborder img {width: 100%; height: 100%;} 
+.Nborder {  
+    border: 4px solid pink;
+    border-radius: 8px;
+    overflow: hidden;
+    animation: border 20s 5s infinite;  
+}	
+@keyframes border {
+    0%   {border-color: tomato;}
+    25%  {border-color: yellow;}
+    50%  {border-color: pink;}
+    100% {border-color: cyan;}
+}  

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySad</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mySad.css">
+</head> 
+<body class="min-h-screen lg:overflow-hidden bg-black">
+    <canvas id="canvas" class="canvas"></canvas>
+
+    <main class="main px-4 md:px-0 space-y-4 md:space-y-6">
+        <!------------------------------------------------------------------>
+        <secion class="space-y-4 lg:space-y-2">  
+            <marquee class=" text-lg md:text-xl font-semibold tracking-widest" behavior="" direction="">
+                <span class="span1 text-orange-400">Chí tâm đảnh lễ </span><span class="span2 text-yellow-300">Nam-mô
+                    Tận
+                    hư-không, biến pháp-giới, quá, hiện, vị-lai thập-phương chư Phật, Tôn-Pháp, Hiền-Thánh Tăng,
+                    Thường-trú Tam-Bảo.</span>
+                <span class="span3 text-cyan-400">Chí tâm đảnh lễ </span><span class="span4 text-yellow-300">Nam-mô
+                    Ta-bà
+                    Giáo-chủ Bổn-sư Thích-Ca Mâu-Ni Phật, Ðương-lai hạ sanh Di-Lặc Tôn Phật, Ðại-trí Văn-Thù
+                    Sư-Lợi Bồ-tát, Ðại-hạnh Phổ-Hiền Bồ-tát, Hộ-Pháp Chư-tôn Bồ-tát, Linh-sơn hội thượng Phật
+                    Bồ-tát.</span>
+                <span class="span5 text-pink-400">Chí tâm đảnh lễ </span><span class="span6 text-yellow-300">Nam-mô
+                    Tây-phương
+                    Cực-lạc thế-giới Ðại-từ Ðại-bi A-Di-Ðà Phật, Ðại bi Quán-Thế-Âm Bồ-tát, Ðại-Thế-Chí
+                    Bồ-tát, Ðại-nguyện Ðịa-Tạng-Vương Bồ-tát, Thanh-tịnh Ðại-hải-chúng Bồ-tát.</span>
+            </marquee>
+
+            <div class="flex justify-between items-center">
+                <aside class="w-1/4 flex justify-between md:pl-6">
+                    <img src="https://s5.gifyu.com/images/sen2c1c03cee0693a458.gif" alt="sen2" class="w-16 lg:w-20">
+
+                    <img src="https://s5.gifyu.com/images/sen189df9d51f8a2ceff.gif" alt="sen1"
+                        class="hidden md:block w-16 lg:w-20">
+                </aside>
+               
+                <header class="w-1/2md:mx-3">
+                    <img src="https://s5.gifyu.com/images/causieubeb2aa5b497181aa.gif" alt="causieu "
+                        class="w-full hw-full">
+                </header>
+
+                <aside class="w-1/4 flex justify-between md:pr-6">
+                    <img src="https://s5.gifyu.com/images/sen189df9d51f8a2ceff.gif" alt="sen1"
+                        class="hidden md:block w-16 lg:w-20">
+
+                    <img src="https://s5.gifyu.com/images/sen2c1c03cee0693a458.gif" alt="sen2" class="w-16 lg:w-20">
+                </aside>
+            </div>
+        </secion>
+
+        <secion class="md:flex md:space-y-0 space-y-6 md:px-6"> 
+            <aside class="md:w-1/4">
+                <div class="carousel 
+                    md:w-full md:h-full 
+                    w-1/3 h-52 mx-auto
+                    relative"
+                > 
+                    <div id="slide" class="Nborder absolute inset-0 -z-2"> 
+                        <img src=" https://s5.gifyu.com/images/phat1f0548cc9b8aabdc9.gif" alt="phat1">
+                        <img src="https://s5.gifyu.com/images/phat20a29095b0fcc41dd.gif" alt="phat2">
+                        <img src="https://s5.gifyu.com/images/phat3ccc2cebccaadacc6.gif" alt="phat3">
+                        <img src="https://s5.gifyu.com/images/phat4ff0dc2bafeefd256.gif" alt="phat4">
+                        <img src="https://s5.gifyu.com/images/phat53517f86bf28613c6.gif" alt="phat5">
+                        <img src="https://s5.gifyu.com/images/phat6532e4201a6a48cfc.gif" alt="phat6">
+                        <img src="https://s5.gifyu.com/images/phat13d74c299ce332881.jpg" alt="phat1">
+                    </div>
+                    <div class="hidden"> 
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="md:w-2/4 md:mx-4 border-4 border-gray-400 rounded-lg">
+                <div class="youtube">
+                    <div id="player-mobile" class="iframe-youtube"></div>
+                </div>
+            </div>
+
+            <aside class="md:w-1/4 hidden md:block">
+                <div class="carousel 
+                    w-full h-full relative"
+                >
+                    <div id="slide-right" class="Nborder absolute inset-0 -z-2">
+                        <img src="https://s5.gifyu.com/images/phatba129e5d67b94624952.gif" alt="phatba1">
+                        <img src="https://s5.gifyu.com/images/phatba2adad5458946f7cea.gif" alt="phatba2">
+                        <img src="https://s5.gifyu.com/images/phatba1bb215dedcedf66e4.jpg" alt="phatba1a">
+                        <img src="https://s5.gifyu.com/images/phatba26445e6d4a430822b.jpg" alt="phatba2a">
+                        <img src="https://s5.gifyu.com/images/phatba33cd6f83fdcaeb51d.jpg" alt="phatba3">
+                        <img src="https://s5.gifyu.com/images/phatba4164ffa66b3164b5b.jpg" alt="phatba4">
+                    </div>
+                    <div class="hidden">
+                        <span class="dotR"></span><span class="dotR"></span><span class="dotR"></span>
+                        <span class="dotR"></span><span class="dotR"></span><span class="dotR"></span>
+                    </div>
+                </div>
+            </aside>
+        </secion>
+
+        <secion class="center-row space-x-4">
+            <button type="button" class="btn">SÁM</button>
+            <button type="button" class="btn">KINH</button>
+            <button type="button" class="btn">NHẠC</button>
+            <a type="button" class="btn" href="myMiss.html">MY MISS</a>
+            <a type="button" class="btn" href="index.html">4WAO</a>
+        </secion>
+        <!------------------------------------------------------------------>
+    </main>
+
+    <script src="./js/mySad.js"></script>
+    <script src="./assets/plugin/snow.js"></script> 
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var playerMobile;
+        function onYouTubeIframeAPIReady() {
+            playerMobile = new YT.Player('player-mobile', {
+                width: '100%',
+                videoId: 'eKjGW16x6X0',
+                playerVars: {
+                    'autoplay': 1,
+                    'playsinline': 1,
+                    'rel': 0,
+                    'showinfo': 0,
+                    'iv_load_policy': 3,
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+    </script>
+</body> 
+</html>

@@ -1,0 +1,192 @@
+ /* li active */
+#youtubeList>li.active {
+    color: yellow;
+    font-weight: bolder;
+    text-transform: uppercase;
+} 
+
+#youtubeList>li.active>img {
+    border-color: yellow;
+}
+ 
+/* animate  */
+.tiger { 
+    animation: border-tiger 5s 1s infinite; 
+}	
+@keyframes border-tiger {
+   0%   {border-color: rgb(43, 41, 41);}
+   50%  {border-color:transparent;}
+   100% {border-color: rgb(43, 41, 41);}
+}  
+
+/* title-bnsd */
+.title-bnsd>span {
+    display: inline-block; 
+    animation: bnsd 6s linear infinite;
+}
+@keyframes bnsd {
+    0% {
+        /* text-shadow: 3px 3px #5d5f5c; */
+        text-shadow: 3px 3px #6e6e6e;
+    }
+    50% {
+        /* text-shadow: 3px 3px #f1e6e9; */
+        text-shadow: 3px 3px #abadab;
+        transform: translateY(30px);
+    }
+    100% {
+        text-shadow: 30x 3px #5d5f5c;
+    }
+}
+span:nth-child(1) {
+    animation-delay: 0.5s;
+}
+span:nth-child(2) {
+    animation-delay: 1s;
+}
+span:nth-child(3) {
+    animation-delay: 1.5s;
+}
+span:nth-child(4) {
+    animation-delay: 2s;
+}
+span:nth-child(5) {
+    animation-delay: 2.5s;
+}
+span:nth-child(6) {
+    animation-delay: 3s;
+}
+span:nth-child(7) {
+    animation-delay: 3.5s;
+}
+span:nth-child(8) {
+    animation-delay: 4s;
+}
+span:nth-child(9) {
+    animation-delay: 4.5s;
+}
+span:nth-child(10) {
+    animation-delay: 5s;
+}
+span:nth-child(11) {
+    animation-delay: 5.5s;
+}
+span:nth-child(12) {
+    animation-delay: 6s;
+} 
+
+/* title */ 
+.title {
+    animation-name: fadeOut;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;  
+  
+    /* animation: fadeIn 10s linear 2s infinite alternate; */
+}   
+@keyframes fadeOut {
+    0% {
+        opacity:1; transform: scale(0);    
+    }
+    10% {
+        opacity:1;  transform: scale(1);  
+    }
+ 
+    45% {
+        opacity:1;  transform: scale(1);  
+    }
+    50% {
+        opacity:1; transform: scale(0);   
+    }
+    55% {
+        opacity:0; 
+    }
+
+    100% { 
+        opacity:0; transform: scale(1);     
+    } 
+}  
+
+@keyframes fadeIn {
+    0% {
+        opacity:0; 
+    } 
+
+    45% {
+        opacity:0;  transform: scale(0);   
+    }
+    50% {
+        opacity:1;  transform: scale(1);     
+    }
+
+    95% {
+        opacity:1;  transform: scale(1);                  
+    } 
+    100% {
+        opacity:1;  transform: scale(0); 
+    } 
+}
+
+/* neon-wrapper */
+.neon-wrapper {  
+    animation: fadeIn 50s ease-in-out infinite;
+}   
+.neon-wrapper {
+    /* filter: brightness(200%); */
+    filter: brightness(100%);
+    overflow: hidden;
+}
+ 
+.text::before {
+    content: 'LOVE SONGS';
+    mix-blend-mode: difference;
+    filter: blur(2px);
+    position: absolute;
+}
+
+.gradient {
+    mix-blend-mode: multiply;
+    background: linear-gradient(114.5793141156962deg, rgba(6, 227, 250, 1) 4.927083333333334%, rgba(229, 151, 64, 1) 97.84374999999999%);
+}
+
+.dodge {
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 5s linear infinite;
+    background: radial-gradient(circle, white, black 35%) center / 25% 25%;
+}
+
+@keyframes dodge-area {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
+ 
+/* carousel  */ 
+.flash-lamp {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.flash-lamp {
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-direction: alternate;
+}  
+@keyframes fadeInOut {
+    0% {
+        opacity:1;
+    }
+    45% {
+        opacity:1;
+    }
+    55% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+} 
+

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMiss</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/myMiss.css">
+    <style></style>
+</head>
+
+<body class="min-h-screen lg:overflow-hidden bg-black">
+    <canvas id="canvas" class="canvas"></canvas>
+    <main class="main p-4 md:p-0">
+        <!-------------------------------------------------------------------------------->
+        <section class="mb-8 md:my-10">
+            <header class="md:w-1/2 md:mx-auto flex justify-between relative">
+                <div class="w-8 h-12 lg:h-16">
+                    <img src="https://www.animatedimages.org/data/media/102/animated-music-image-0077.gif"
+                        alt="music-note" class="w-full h-full" />
+                </div> 
+
+                <div class="neon-wrapper">
+                    <span class="text bg-black text-4xl lg:text-6xl text-cyan-500 font-bold uppercase tracking-widest">
+                        LOVE SONGS
+                    </span>
+                    <span class="gradient absolute top-0 left-0"></span>
+                    <span class="dodge absolute -top-full -left-full right-0 bottom-9 lg:bottom-0"></span>
+                </div>
+
+                <div class="title 
+                    absolute w-full h-full md:-top-2 lg:-top-4"
+                >
+                    <div class="title-bnsd 
+                        mx-10 text-center 
+                        text-3xl lg:text-5xl 
+                        font-bold tracking-widest text-fuchsia-600"
+                    >
+                        <span>T</span><span>Ì</span><span>N</span><span class="">H</span>
+                        <span>K</span><span>H</span><span>Ú</span><span class="">C</span>
+                        <span>B</span><span>N</span><span>S</span><span>D</span>
+                    </div>
+                </div>
+
+                <div class="w-8 h-12 lg:h-16">
+                    <img src="https://www.animatedimages.org/data/media/102/animated-music-image-0077.gif"
+                        alt="music-note" class="w-full h-full" />
+                </div>
+            </header>
+
+            <a type="button" href="#" class="tiger 
+                hidden lg:block 
+                absolute top-6 right-6 
+                w-20 h-20 
+                border-double rounded-full border-4 border-yellow-500"
+            >
+                <img src="https://s5.gifyu.com/images/tiger-logo.png" alt="Tiger" />
+            </a>
+        </section>
+
+        <section class="md:flex md:space-y-0 space-y-6">
+            <aside class="w-1/3 mx-auto md:w-1/4 relative">
+                <div class="kiki1 md:absolute md:inset-0 md:px-6">
+                    <img onclick="openCover()" src="https://s5.gifyu.com/images/kiki1.md.jpg" alt="kiki1"
+                        class="w-full h-full rounded-full cursor-pointer">
+                </div>
+            </aside>
+
+            <div class="md:w-2/4 md:mx-4 border-4 border-gray-400 rounded-lg">
+                <div class="youtube">
+                    <div class="audio">
+                        <iframe class="iframe-audio absolute inset-0 w-full h-full" src="" frameborder="0"
+                            allowfullscreen allow="autoplay">
+                        </iframe>
+                        <div class="layer-black bg-black absolute inset-0"></div>
+                        <div class="layer-audio h-60 absolute inset-x-8 top-0 cursor-pointer"></div>
+                    </div>
+
+                    <iframe class="iframe-youtube player" src="" allow="autoplay" allowfullscreen>
+                    </iframe>
+
+                    <div class="cover absolute inset-0 cursor-pointer">
+                        <div id="player-mobile" class="iframe-youtube player-mobile"></div>
+                        <div class="layer-cover absolute inset-0 cursor-pointer">
+                            <img src="https://s5.gifyu.com/images/kikih1.md.jpg" alt="kikih1"
+                                class="w-20 md:w-28 mt-4 mr-4 float-right rounded-full">
+                        </div>
+                    </div>
+
+                    <div class="menu-audio hidden absolute inset-0 cursor-pointer">
+                        <div class="wrap h-full relative">
+                            <div class="opacity absolute inset-0 bg-gray-300 opacity-20"></div>
+
+                            <div class="menu-audio-link absolute inset-0 border-8 rounded-lg border-black border/50">
+                                <h2 class="my-2 md:my-4 text-center font-extrabold uppercase text-red-500">
+                                    Menu-Audio
+                                </h2>
+                                <nav class="pl-4 text-sm md:text-base font-extrabold text-white">
+                                    <span onclick="audio1()">audio1</span>
+                                    <span onclick="audio1()">audio2</span>
+                                    <span onclick="audio1()">audio3</span>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="md:w-1/4 relative">
+                <div class="absolute left-0 right-0 top-12 md:inset-0 
+                    border-4 border-gray-400 rounded-lg">
+                    <div class="relative h-80 md:h-full overflow-hidden">
+                        <img src="https://s4.gifyu.com/images/unnamed824905d4b36cd092.gif" alt="flash"
+                            class="w-full h-full absolute inset-0 -z-3">
+                        <img src="https://s5.gifyu.com/images/flash-lampacbcc474458fa25e.gif" alt="flash-lamp"
+                            class="w-full h-full absolute inset-0 -z-3">
+
+                        <div class="opacity absolute inset-0 -z-2 w-full h-full bg-gray-400/30"></div>
+
+                        <img src="https://s5.gifyu.com/images/equalizer2117496e6108469d.gif" alt="equalizer"
+                            class="absolute inset-0 w-full h-16 border-b-4 border-gray-500">
+                        <!-- note id="youtubeList"-->
+                        <ul id="youtubeList" class="youtube-list">
+                            <li onclick="nhac()">
+                                <img src="https://s5.gifyu.com/images/nhac.jpg" alt="nhac">
+                                <small>Cánh thư mùa hạ</small>
+                            </li>
+                            <li onclick="nhacphongtra()">
+                                <img src="https://s5.gifyu.com/images/phongtra.jpg" alt="phongtra">
+                                <small>Nhạc phòng trà</small>
+                            </li>
+                            <li onclick="nhacvang()">
+                                <img src="https://s5.gifyu.com/images/nhacvang.jpg" alt="nhacvang">
+                                <small>Nhạc vàng</small>
+                            </li>
+                            <li onclick="tienchien()">
+                                <img src="https://s5.gifyu.com/images/tienchien.jpg" alt="tienchien">
+                                <small>Nhạc tiền chiến</small>
+                            </li>
+                            <li onclick="quehuong()">
+                                <img src="https://s5.gifyu.com/images/quehuong.jpg" alt="quehuong">
+                                <small>Nhạc quê hương</small>
+                            </li>
+                            <li onclick="khongloi()" class="active">
+                                <img src="https://s5.gifyu.com/images/khongloi1.jpg" alt="khongloi">
+                                <small>Nhạc không lời</small>
+                            </li>
+                            <li onclick="khongloi_quehuong()">
+                                <img src="https://s5.gifyu.com/images/khongloi-quehuong.jpg" alt="khongloi-quehuong">
+                                <small>Không lời quê hương</small>
+                            </li>
+                            <li onclick="khongloi_thugian()">
+                                <img src="https://s5.gifyu.com/images/thugian.jpg" alt="thugian">
+                                <small>Nhạc thư giản</small>
+                            </li>
+                            <li onclick="quanhoquetoi()">
+                                <img src="https://s5.gifyu.com/images/quanhoquetoi.jpg" alt="quanhoquetoi">
+                                <small>Quan họ quê tôi</small>
+                            </li>
+                            <li onclick="nhatkicuame()">
+                                <img src="https://s5.gifyu.com/images/nhatkicuame.jpg" alt="nhatkicuame">
+                                <small>Nhật kí của Mẹ</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="center-row space-x-4 md:mt-8">
+            <a class="btn" type=" button" href="http://127.0.0.1:5500/public/home.html">HOME</a>
+            <button class="btn btn-audio" type="button" onclick="audioMenu()">AUDIO</button>
+            <a class="btn" type="button" href="mySad.html">MYSAD</a>
+            <a class="btn" type="button" href="index.html">4WAO</a>
+        </section>
+        <!------------------------------------------------------------------------------------>
+    </main>
+    <script src="./js/myMiss.js"></script>
+
+    <!-- NOTE autoplay -->
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var playerMobile;
+        function onYouTubeIframeAPIReady() {
+            playerMobile = new YT.Player('player-mobile', {
+                width: '100%',
+                videoId: 'ppeWG-oiJkg',
+                playerVars: {
+                    'autoplay': 1,
+                    'playsinline': 1,
+                    'loop': 1,
+                    'mute': 1,
+                    'controls': 0,
+                    'rel': 0,
+                    'showinfo': 0,
+                    'modestbranding': 1, 'autohide': 1,
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+    </script>
+</body>
+
+</html>
