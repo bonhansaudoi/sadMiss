@@ -43,11 +43,11 @@ $ npm run dev
 ```  
 
 ```bash
-$ git init
-$ git add .  
-$ git remote add origin https://github.com/bonhansaudoi/sadMiss.git
-$ git commit -m "commit"
-$ git push -u origin master
+git init
+git add .  
+git remote add origin https://github.com/bonhansaudoi/sadMiss.git
+git commit -m "commit"
+git push -u origin master
 ```  
 
 ## Link
